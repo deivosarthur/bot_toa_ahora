@@ -1,0 +1,17 @@
+{
+    "bot": "TOA",
+    "version": "2.0",
+    "estado": "OK",
+    "mensaje": "Áreas procesadas: ['metropolitana', 'norte', 'sur', 'centro']",
+    "ultima_actualizacion": "2026-06-25 09:52:19",
+    "ultima_descarga": "2026-06-25 09:47:49",
+    "ciclos_ok": 1,
+    "errores": 0,
+    "reinicios": 0,
+    "errores_consecutivos": 0,
+    "alerta_error_enviada": false,
+    "uptime_inicio": "2026-06-25 09:47:15",
+    "pid_bot": 15448,
+    "pid_chromedriver": 2596,
+    "pid_chrome": 18616
+}

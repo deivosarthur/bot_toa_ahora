@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-06T15:47:39.583112",
+  "areas": [
+    "metropolitana",
+    "norte",
+    "sur",
+    "centro"
+  ]
+}
