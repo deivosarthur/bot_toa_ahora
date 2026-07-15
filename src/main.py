@@ -26,6 +26,9 @@ from command_listener import (
 
 from bot_state import BOT_STATE
 from heartbeat import guardar_estado
+from date_checker import obtener_fecha_toa
+from date_checker import fecha_toa_es_hoy
+from date_checker import sincronizar_fecha_toa
 
 def iniciar_dashboard():
     serve(
@@ -51,6 +54,11 @@ def main():
     driver = iniciar_sesion()
     set_driver(driver)
     #actualizar_estado("ACTIVO")
+    
+    
+    obtener_fecha_toa(driver, logger)
+    fecha_toa_es_hoy(driver, logger)
+    
     limpiar_screenshots()
     logger.info("Bot iniciado correctamente")
     
@@ -134,7 +142,11 @@ def main():
 
             # 🔥 limpieza
             limpiar_temporales()
-
+            
+            # Verificar que TOA esté en la fecha correcta
+            sincronizar_fecha_toa(driver, logger)
+            
+            
             # 🔥 descargas
             areas_ok = ejecutar_descargas(driver)
 
